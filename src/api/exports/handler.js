@@ -6,7 +6,7 @@ class ExportsHandler {
     this.postExportNotesHandler = this.postExportNotesHandler.bind(this);
   }
 
-  async postExportNotesHandler(request, h) { 
+  async postExportNotesHandler(request, h) {
     this._validator.validateExportNotesPayload(request.payload);
 
     const message = {
